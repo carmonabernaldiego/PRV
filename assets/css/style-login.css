@@ -72,7 +72,7 @@ header a img {
 .box-login #txtuser,
 .box-login #txtpass,
 .box-registro #txtuser,
-.box-registro #txtemail,
+.box-registro #txtname,
 .box-registro #txtpass {
     display: block;
     width: 87%;
@@ -93,7 +93,7 @@ header a img {
 .box-login #txtuser:focus,
 .box-login #txtpass:focus,
 .box-registro #txtuser:focus,
-.box-registro #txtemail:focus,
+.box-registro #txtname:focus,
 .box-registro #txtpass:focus {
     color: #446594 !important;
     cursor: text;
@@ -101,7 +101,7 @@ header a img {
     transition: all 250ms ease-in;
 }
 
-.box-registro #txtemail,
+.box-registro #txtname,
 .box-registro #txtuser,
 .box-registro #txtpass {
     margin-top: 25px;

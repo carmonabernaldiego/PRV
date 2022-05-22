@@ -2,7 +2,20 @@ const user = document.querySelector('#txtuser');
 const pass = document.querySelector('#txtpass');
 const button = document.querySelector('#button');
 
-let users = [{ user: 'admin', pass: 'root', nombre: 'Ernesto Valdivieso Pérez' }, { user: 'editor', pass: '1234', nombre: 'Carlos López López' }, { user: 'diego', pass: 'diego97', nombre: 'Diego Carmona Bernal' }];
+let users;
+
+let usersPreCargados = [{ user: 'admin', pass: 'root', nombre: 'Ernesto Valdivieso Pérez' }, { user: 'editor', pass: '1234', nombre: 'Carlos López López' }, { user: 'diego', pass: 'diego97', nombre: 'Diego Carmona Bernal' }];
+
+if (localStorage.getItem('registro')) {
+    users = usersPreCargados;
+
+    let registro = JSON.parse(localStorage.getItem('registro'));
+    let newArray = users.concat(registro);
+    users = newArray;
+} else {
+    users = usersPreCargados;
+}
+
 
 button.addEventListener('click', () => {
     let usuario = user.value;
