@@ -1,140 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Películas - CKH PELIS</title>
     <link rel="icon" type="image/png" href="assets/img/logo.png" />
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar">
-        <img src="assets/img/logo.png" class="brand-logo" alt="">
-        <ul class="nav-links">
-            <li class="nav-items"><a href="series.html">Series</a></li>
-            <li class="nav-items"><a class="active" href="#">Películas</a></li>
-            <li class="nav-items"><a href="anime.html">Animes</a></li>
-        </ul>
-
-        <div class="right-container">
-            <input type="text" class="search-box" placeholder="Buscar">
-            <button id="logout-btn" type="submit">Cerrar sesión</button>
-            <a href="registro.html" id="sub-btn">suscribirse</a>
-            <a href="#" id="login-name"></a>
-            <a href="login.html" id="login-link">Iniciar sesión</a>
-        </div>
+      <img src="assets/img/logo.png" class="brand-logo" alt="" />
+      <ul class="nav-links">
+        <li class="nav-items"><a href="series.html">Series</a></li>
+        <li class="nav-items"><a class="active" href="#">Películas</a></li>
+        <li class="nav-items"><a href="anime.html">Animes</a></li>
+      </ul>
+      <div class="right-container">
+        <input
+          type="text"
+          class="search-box"
+          placeholder="Buscar"
+          id="inputBuscar"
+        />
+        <button id="logout-btn" type="submit">Cerrar sesión</button>
+        <a href="registro.html" id="sub-btn">suscribirse</a>
+        <a href="#" id="login-name"></a>
+        <a href="login.html" id="login-link">Iniciar sesión</a>
+      </div>
     </nav>
     <section>
-        <aside>
-            <h1>Aside</h1>
-            <ul>
-                <li>
-                    <a href="#">El sorprendente hombre araña</a>
-                </li>
-                <li>
-                    <a href="#">Matrix recargado</a>
-                </li>
-                <li>
-                    <a href="#">Soul</a>
-                </li>
-                <li>
-                    <a href="#">Las aventuras de Phineas y Ferb</a>
-                </li>
-                <li>
-                    <a href="#">Como entrenar a tu dragon</a>
-                </li>
-            </ul>
-        </aside>
-        <article>
-            <!-- ESTE SECTION ENGLOBA TODAS LAS Películas -->
-            <div class="pelicula">
-                <h3>Al filo del mañana</h3>
-                <img src="assets/img/filoManana.jpg">
-                <span>Accion, Ciencia Ficcion, Aventura</span>
-                <p>La historia se desarrolla en un futuro cercano en el que una raza alienígena tipo colmena, llamada Mimics, ha llegado a la Tierra realizando continuas agresiones, reduciendo a escombros grandes ciudades y dejando millones de víctimas humanas
-                    a su paso. Ningún ejército del mundo puede hacer frente a la velocidad, brutalidad o clarividencia de los militarizados combatientes Mimic o de sus telepáticos comandantes. Pero ahora los ejércitos del mundo han unido sus fuerzas para
-                    realizar una ofensiva de largo alcance contra las hordas alienígenas, sin que haya una segunda oportunidad.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Iron man - El hombre de hierro</h3>
-                <img src="assets/img/ironman1.jpg">
-                <span>Accion, Ciencia Ficcion, Aventura, Marvel Comics</span>
-                <p>El multimillonario fabricante de armas Tony Stark (Robert Downey Jr.) debe enfrentarse a su turbio pasado después de sufrir un accidente con una de sus armas. Equipado con una armadura de última generación tecnológica, se convierte en
-                    "El hombre de hierro", un héroe que se dedica a combatir el mal en todo el mundo.</p>
-
-            </div>
-
-            <div class="pelicula">
-                <h3>El Proyecto Adam</h3>
-                <img src="assets/img/proyectoAdam.jpeg">
-                <span>Comedia, Ciencia Ficcion, Aventura</span>
-                <p>Adam Reed es un piloto de caza que viaja en el tiempo. Cuando se estrella en el año 2022, conoce a su yo de 12 años y juntos emprenden una misión para salvar el futuro.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>John Wick (Otro día para matar)</h3>
-                <img src="assets/img/johnWick.webp">
-                <span>Accion, Suspenso</span>
-                <p>John Wick es un antiguo asesino a sueldo de Nueva York que se había retirado de la profesión después de perder a su esposa. Pero, al descubrir la oscura trama que la mafia había planeado para acabar con él, arrebatándole lo que más quería,
-                    volverá a introducirse en el negocio, esta vez por su cuenta, para vengarse.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>The Batman</h3>
-                <img src="assets/img/theBatman.webp">
-                <span>Accion, Drama, Crimen, DC Comics</span>
-                <p>Cuando un asesino se dirige a la élite de Gotham con una serie de maquinaciones sádicas, un rastro de pistas crípticas envía Batman a una investigación en los bajos fondos. A medida que las pruebas comienzan a acercarse a su casa y se
-                    hace evidente la magnitud de los planes del autor, Batman debe forjar nuevas relaciones, desenmascarar al culpable y hacer justicia al abuso de poder y la corrupción que durante mucho tiempo han asolado Gotham City.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Joker</h3>
-                <img src="assets/img/joker.png">
-                <span>Drama, Suspenso, Crimen, DC Comics</span>
-                <p>Arthur Fleck es un hombre ignorado por la sociedad, cuya motivación en la vida es hacer reír. Pero una serie de trágicos acontecimientos le llevarán a ver el mundo de otra forma. Película basada en Joker, el popular personaje de DC Comics
-                    y archivillano de Batman, pero que en este film toma un cariz más realista y oscuro.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Spider-Man</h3>
-                <img src="assets/img/spiderman1.webp">
-                <span>Accion, Fantasia, Marvel Comics</span>
-                <p>Peter Parker es un joven y tímido estudiante que vive con su tía May y su tío Ben desde la muerte de sus padres. Un día es mordido por una araña que ha sido modificada genéticamente, descubriendo al día siguiente que posee unos poderes
-                    poco habituales: tiene la fuerza y agilidad de una araña.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Doctor Strange</h3>
-                <img src="assets/img/drStrange.webp">
-                <span>Accion, Ciencia Ficcion, Aventura, Fantasia, Marvel Comics</span>
-                <p>La vida del Dr. Stephen Strange cambia para siempre tras un accidente automovilístico que le deja muy malheridas sus manos. Cuando la medicina tradicional falla, se ve obligado a buscar esperanza y una cura en un lugar impensable: una
-                    comunidad aislada en Nepal llamada Kamar-Taj. Rápidamente descubre que éste no es sólo un centro de recuperación, sino también la primera línea de una batalla en contra de fuerzas oscuras y ocultas empeñadas en destruir nuestra realidad.
-                    En poco tiempo, Strange, armado con sus poderes mágicos recientemente adquiridos, se ve obligado a elegir entre volver a su antigua vida de riqueza y prestigio o dejarlo todo, para defender el mundo como el mago más poderoso del planeta.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Terminator: Destino oscuro</h3>
-                <img src="assets/img/terminatorDestinoOscuro.jpeg">
-                <span>Accion, Ciencia Ficcion, Aventura</span>
-                <p>Sarah Connor une todas sus fuerzas con una mujer cyborg para proteger a una joven de un extremadamente poderoso y nuevo Terminator.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Hulk</h3>
-                <img src="assets/img/hulk.webp">
-                <span>Accion, Ciencia Ficcion, Marvel Comics</span>
-                <p>Bruce Banner un brillante investigador en el campo de la tecnología genética, oculta un pasado doloroso que lo ha dejado estigmatizado. Su antigua novia, la investigadora Betty Ross (Jennifer Connelly), que perdió la paciencia esperando
-                    que recuperara la estabilidad emocional, fue testigo de un grave accidente sufrido por Banner en el laboratorio: debido a una explosión el cuerpo del científico absorbió una dosis letal de rayos gamma; desde entonces, Banner empezó
-                    a sentir en su interior la presencia de un ente peligroso y, a la vez, oscuramente atractivo. Mientras tanto, Hulk, una criatura salvaje y prodigiosamente fuerte aparece esporádicamente, dejando tras de sí una estela de destrucción.
-                    Se trata de una situación de emergencia que exige la intervención del ejército, encabezado por el padre de Betty, el general "Thunderbolt" Ross. Betty es la única que sospecha que Bruce tiene algo que ver con Hulk.</p>
-            </div>
-        </article>
+      <aside>
+        <ul>
+          <li>
+            <button onclick="filtrarCategoria('Accion')">Acción</button>
+          </li>
+          <li>
+            <button onclick="filtrarCategoria('Comedia')">Comedia</button>
+          </li>
+          <li>
+            <button onclick="filtrarCategoria('DC')">DC Comics</button>
+          </li>
+          <li>
+            <button onclick="filtrarCategoria('Marvel')">Marvel</button>
+          </li>
+          <li>
+            <button onclick="ingresarPeliculas()">Mostrar todo</button>
+          </li>
+        </ul>
+      </aside>
+      <article id="contenido">
+        <!-- ESTE ARTICLE ENGLOBA TODAS LAS PELICULAS QUE SE INSERTAN POR UN SCRIPT -->
+      </article>
     </section>
     <script src="assets/js/script.js"></script>
-</body>
-
+    <!-- ESTE SCRIPT ES EL ENCARGADO DE METER TODAS LAS PELICULAS -->
+    <script src="assets/js/scriptPeliculas.js"></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8185770440672299"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

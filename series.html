@@ -20,7 +20,9 @@
         </ul>
 
         <div class="right-container">
-            <input type="text" class="search-box" placeholder="Buscar">
+            <input type="text" class="search-box" placeholder="Buscar" id="inputBuscar">
+            <!-- SE AGREGA BOTON BUSCAR PARA MANDAR EL INPUT A UN CODIGO -->
+            <button id="btnBuscar" onclick="buscarPeliculas()">BUSCAR</button>
             <button id="logout-btn" type="submit">Cerrar sesión</button>
             <a href="registro.html" id="sub-btn">suscribirse</a>
             <a href="#" id="login-name"></a>
@@ -32,107 +34,27 @@
             <h1>Aside</h1>
             <ul>
                 <li>
-                    <a href="#">El sorprendente hombre araña</a>
+                    <button onclick="filtrarCategoria( 'Marvel' )" >MARVEL</button>
                 </li>
                 <li>
-                    <a href="#">Matrix recargado</a>
+                    <button onclick="filtrarCategoria( 'Drama' )" >DRAMA</button>
                 </li>
                 <li>
-                    <a href="#">Soul</a>
+                    <button onclick="filtrarCategoria( 'Comedia' )" >COMEDIA</button>
                 </li>
                 <li>
-                    <a href="#">Las aventuras de Phineas y Ferb</a>
+                    <button onclick="filtrarCategoria( 'Accion' )" >ACCIÓN</button>
                 </li>
                 <li>
-                    <a href="#">Como entrenar a tu dragon</a>
+                    <button onclick="ingresarPeliculas( )" >MOSTRAR TODO</button>
                 </li>
             </ul>
         </aside>
-        <article>
-            <div class="pelicula">
-                <h3>Marvel's Inhumans</h3>
-                <img src="assets/img/inhumans.jpg">
-                <span>Accion, Ciencia Ficcion, Aventura, Marvel Comics</span>
-                <p>Black Bolt es el rey de Attilan y su voz es tan poderosa que un simple susurro podría devastar una ciudad. Sin embargo, un golpe de estado lo obliga a escapar a Hawái con su esposa, su hermano y rival, sus primos y su cuñada.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Moon Knight</h3>
-                <img src="assets/img/moonknight.jpg">
-                <span>Aventura, Acción, Terror psicológico, Marvel Comics</span>
-                <p>La serie sigue a Steven Grant (Oscar Isaac), un empleado de una tienda de regalos que padece de afecciones en la memoria, quedándose en blanco o trayéndole recuerdos de otra vida. Steven descubre que tiene un trastorno de identidad disociativo,
-                    y que comparte cuerpo con el mercenario Marc Spector.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>What If...?</h3>
-                <img src="assets/img/whatif.webp">
-                <span>Ficción de superhéroes, Acción, Terror psicológico, Marvel Comics</span>
-                <p>What If...? le da un gran giro al UCM al reimaginar eventos famosos de las películas de formas inesperadas. La primera serie animada de Marvel Studios se centra en diferentes héroes del UCM, con un elenco de voces que incluye a varias
-                    estrellas retomando sus papeles.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Malcolm in the Middle</h3>
-                <img src="assets/img/malcolm.jpg">
-                <span>Comedia, Drama, Telecomedia, Aventura</span>
-                <p>Este chico es un joven adolescente superdotado que intenta sobrevivir en una torpe familia disfuncional. Malcolm tendrá que hacer frente a sus problemas en la escuela y a las batallas organizadas por sus hermanos en casa; en un continuo
-                    y confuso debate entre la niñez y la adolescencia.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Gotham</h3>
-                <img src="assets/img/gotham.webp">
-                <span>Drama, Acción, Ciencia ficción, Ficción de superhéroes.</span>
-                <p>El detective James Gordon se desenvuelve por el mundo peligrosamente corrupto de Gotham City, mientras que un joven Bruce Wayne encuentra su camino para convertirse en un héroe.</p>
-            </div>
-
-            <div class="pelicula">
-                <h3>The Flash</h3>
-                <img src="assets/img/flash.jpg">
-                <span>Accion, Ciencia Ficcion, Aventura, Marvel Comics</span>
-                <p>Nueve meses después de que el laboratorio S.T.A.R. explotara, Barry despierta del coma y descubre que tiene el poder de la súper velocidad. Con la ayuda de su nuevo equipo, Barry, denominado ahora `Flash', luchará contra el crimen en Ciudad
-                    Central.
-                </p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Peaky Blinders</h3>
-                <img src="assets/img/peaky.jpg">
-                <span>Ficción histórica, Drama, Crimen</span>
-                <p>Gran Bretaña vive la posguerra. Los soldados regresan, se acuñan nuevas revoluciones y nacen bandas criminales en una nación agitada. En Birmingham, una pandilla de gánsters callejeros asciende hasta convertirse en los reyes de la clase
-                    obrera.
-                </p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Better Call Saul</h3>
-                <img src="assets/img/bettercallsaul.jpg">
-                <span>Comedia negra, Tragedia, Drama, Crimen</span>
-                <p>La serie narra los acontecimientos que llevan a McGuill a convertirse en Saul antes de trabajar con Walter White (Bryan Cranston), más conocido como Heisenberg, el narcotraficante más temido de Nuevo México.
-                </p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Hawkeye</h3>
-                <img src="assets/img/hawkeye.jpg">
-                <span>Aventura, Acción, género policíaco, Marvel Comics</span>
-                <p>Ojo de Halcón es una serie de Marvel que se centra en la historia del superhéroe Clint Barton que se encuentra en Nueva York junto a sus hijos tras los acontecimientos de Vengadores: Endgame, justo después del trágico Lapso.
-                </p>
-            </div>
-
-            <div class="pelicula">
-                <h3>Love, Death & Robots</h3>
-                <img src="assets/img/lovedeathrobots.jpg">
-                <span>Comedia, Terror, Ficción histórica, Animación para adultos</span>
-                <p>Una mujer llamada Sonnie controla remotamente a un monstruo genéticamente diseñado para batallas clandestinas de gladiadores. Un hombre rico le ofrece mucho dinero para perder, pero ella se niega. Después de que ella gana el combate, él
-                    regresa para hacerla pagar, solo para descubrir que él tiene las cosas complicadas.
-                </p>
-            </div>
-
+        <article id="contenido">
         </article>
     </section>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/scriptSerie.js"></script>
 </body>
 
 </html>
