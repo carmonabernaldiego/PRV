@@ -121,3 +121,7 @@ const buscarSeries = () => {
         }
     }
 }
+
+inputBuscar.addEventListener('change', (event) => {
+    buscarSeries();
+});
