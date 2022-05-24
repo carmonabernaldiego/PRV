@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animes - CKH PELIS</title>
     <link rel="icon" type="image/png" href="assets/img/logo.png" />
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar">
-        <img src="assets/img/logo.png" class="brand-logo" alt="">
-        <ul class="nav-links">
-            <li class="nav-items"><a href="series.html">Series</a></li>
-            <li class="nav-items"><a href="/">Películas</a></li>
-            <li class="nav-items"><a class="active" href="#">Animes</a></li>
-        </ul>
-
-        <div class="right-container">
-            <input type="text" class="search-box" placeholder="Buscar" id="inputBuscar">
-            <!-- SE AGREGA BOTON BUSCAR PARA MANDAR EL INPUT A UN CODIGO -->
-            <button id="btnBuscar" onclick="buscarAnimes()">BUSCAR</button>
-            <button id="logout-btn" type="submit">Cerrar sesión</button>
-            <a href="registro.html" id="sub-btn">suscribirse</a>
-            <a href="#" id="login-name"></a>
-            <a href="login.html" id="login-link">Iniciar sesión</a>
-        </div>
+      <img src="assets/img/logo.png" class="brand-logo" alt="" />
+      <ul class="nav-links">
+        <li class="nav-items"><a href="series.html">Series</a></li>
+        <li class="nav-items"><a href="/">Películas</a></li>
+        <li class="nav-items"><a class="active" href="#">Animes</a></li>
+      </ul>
+      <div class="right-container">
+        <input
+          type="text"
+          class="search-box"
+          placeholder="Buscar"
+          id="inputBuscar"
+        />
+        <button id="logout-btn" type="submit">Cerrar sesión</button>
+        <a href="registro.html" id="sub-btn">suscribirse</a>
+        <a href="#" id="login-name"></a>
+        <a href="login.html" id="login-link">Iniciar sesión</a>
+      </div>
     </nav>
     <section>
-        <aside>
-            <h1>Aside</h1>
-            <ul>
-                <li>
-                    <button onclick="filtrarCategoria( 'Aventura' )" >Aventura</button>
-                </li>
-                <li>
-                    <button onclick="filtrarCategoria( 'Fantasia' )" >Fantasia</button>
-                </li>
-                <li>
-                    <button onclick="filtrarCategoria( 'Comedia' )" >COMEDIA</button>
-                </li>
-                <li>
-                    <button onclick="filtrarCategoria( 'Accion' )" >ACCIÓN</button>
-                </li>
-                <li>
-                    <button onclick="ingresarAnimes( )" >MOSTRAR TODO</button>
-                </li>
-            </ul>
-        </aside>
-        <article id="contenido">
-           <!-- ESTE ARTICLE ENGLOBA TODOS LOS ANIMES QUE SE INSERTAN POR UN SCRIPT -->
-        </article>
+      <aside>
+        <ul>
+          <li>
+            <button onclick="filtrarCategoria( 'Accion' )">Acción</button>
+          </li>
+          <li>
+            <button onclick="filtrarCategoria( 'Aventura' )">Aventura</button>
+          </li>
+          <li>
+            <button onclick="filtrarCategoria( 'Comedia' )">Comedia</button>
+          </li>
+          <li>
+            <button onclick="filtrarCategoria( 'Fantasia' )">Fantasía</button>
+          </li>
+          <li>
+            <button onclick="ingresarAnimes( )">Mostrar todo</button>
+          </li>
+        </ul>
+      </aside>
+      <article id="contenido"></article>
     </section>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/scriptAnime.js"></script>
-</body>
-
+  </body>
 </html>
