@@ -109,7 +109,7 @@ const buscarAnimes = () => {
     article.innerHTML = "";
     for (let i = 0; i < 10; i++) {
         let texto = '';
-        if (animes[i].h3.toLowerCase().search(textoBuscar) != -1) {
+        if (animes[i].h3.toLowerCase().search(textoBuscar.toLowerCase()) != -1) {
             let texto =
                 `
             <div class="pelicula">
